@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>スタートアップ野武士採用｜20人未満の創業期スタートアップ特化</title>
+    <!-- Tailwind CSS CDNを読み込み -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- フォント設定 -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Sans+JP:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', 'Noto Sans JP', sans-serif;
+            color: #e5e7eb; /* Light gray text for dark background */
+        }
+        .cta-button {
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.5), 0 4px 6px -2px rgba(59, 130, 246, 0.2); /* Blue 500 shadow */
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: #3b82f6; /* Blue 500 */
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .card-hover {
+            transition: all 0.3s ease-in-out;
+        }
+        .card-hover:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 25px -5px rgba(59, 130, 246, 0.15), 0 10px 10px -5px rgba(59, 130, 246, 0.05);
+        }
+        .step-number {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-950 min-h-screen">
+
+    <!-- ヘッダー -->
+    <header class="bg-gray-900/80 sticky top-0 z-50 backdrop-blur-sm shadow-xl border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="text-2xl font-extrabold tracking-widest text-blue-400">
+                19 JUKE
+            </div>
+            <a href="#register" class="cta-button px-6 py-2 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-full text-sm shadow-lg">
+                無料で登録する
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- ヒーローセクション -->
+        <section id="hero" class="py-20 sm:py-32 text-center bg-cover bg-center bg-no-repeat relative">
+            <div class="absolute inset-0 bg-gray-950 opacity-90"></div>
+            <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+                    スタートアップ<span class="text-blue-400">野武士採用</span>
+                </h1>
+                <p class="text-xl sm:text-2xl font-medium text-blue-200 mb-8">
+                    20人未満の創業期スタートアップに特化した、<br class="sm:hidden">0→1人材マッチングサービス
+                </p>
+
+                <p class="max-w-3xl mx-auto text-lg text-gray-300 mb-12 leading-relaxed">
+                    スタートアップスタジオが伴走する、創業期スタートアップとの出会い。<br>
+                    事業・組織の立ち上げを担える <span class="text-white font-bold border-b border-blue-500">スタートアップ野武士</span> と<br>
+                    シード・アーリーフェーズの有望スタートアップをつなぐ<br>
+                    創業期特化のマッチングサービスです。
+                </p>
+
+                <a href="#register" class="cta-button inline-block px-12 py-4 bg-blue-600 hover:bg-blue-500 text-white font-bold text-xl rounded-full shadow-2xl transition-all duration-300 transform hover:scale-105">
+                    無料で登録する
+                </a>
+            </div>
+        </section>
+
+        <!-- 課題提起セクション -->
+        <section id="pain-points" class="py-16 sm:py-24 bg-gray-900">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white section-title mb-16">
+                    スタートアップ転職は難しい理由
+                </h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="p-6 bg-gray-800 rounded-xl shadow-lg border-t-4 border-blue-500 card-hover text-left">
+                        <div class="text-3xl mb-3 text-blue-300">😶‍🌫️</div>
+                        <h3 class="text-lg font-bold text-white mb-2">内情が見えない</h3>
+                        <p class="text-gray-400 text-sm">創業期スタートアップは情報が少なく、外からは実態や内情がつかめない。</p>
+                    </div>
+                    <div class="p-6 bg-gray-800 rounded-xl shadow-lg border-t-4 border-blue-500 card-hover text-left">
+                        <div class="text-3xl mb-3 text-blue-300">📉</div>
+                        <h3 class="text-lg font-bold text-white mb-2">出会いの幅が狭い</h3>
+                        <p class="text-gray-400 text-sm">リファラル以外で信頼できる紹介が少なく、自分に合う企業が見つかりにくい。</p>
+                    </div>
+                    <div class="p-6 bg-gray-800 rounded-xl shadow-lg border-t-4 border-blue-500 card-hover text-left">
+                        <div class="text-3xl mb-3 text-blue-300">⏳</div>
+                        <h3 class="text-lg font-bold text-white mb-2">時間がない</h3>
+                        <p class="text-gray-400 text-sm">現職が多忙な中、大量のスカウト対応や複雑な面談調整に時間を割けない。</p>
+                    </div>
+                    <div class="p-6 bg-gray-800 rounded-xl shadow-lg border-t-4 border-blue-500 card-hover text-left">
+                        <div class="text-3xl mb-3 text-blue-300">🧩</div>
+                        <h3 class="text-lg font-bold text-white mb-2">判断が難しい</h3>
+                        <p class="text-gray-400 text-sm">0→1フェーズはスキル以上に「相性」が最重要だが、その見極めが難しい。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- サービス概要セクション -->
+        <section id="overview" class="py-16 sm:py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-gray-900 p-8 sm:p-16 rounded-2xl shadow-2xl border border-gray-800 text-center">
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white section-title mb-12">
+                        サービス概要
+                    </h2>
+                    
+                    <p class="text-sm font-bold tracking-widest text-blue-500 uppercase mb-2">SERVICE CONCEPT</p>
+                    <h3 class="text-2xl sm:text-4xl font-extrabold text-white mb-6 leading-tight">
+                        20人未満スタートアップ <span class="text-blue-500">×</span> 0→1野武士
+                    </h3>
+                    <p class="text-xl text-gray-300 mb-10">創業期に特化したマッチングサービス</p>
+
+                    <div class="max-w-3xl mx-auto">
+                        <p class="text-gray-400 text-lg leading-relaxed">
+                            スタートアップスタジオ <span class="text-white font-bold">SEREAL</span> の知見・ネットワークを活かし、<br>
+                            0→1フェーズで活躍できる人材（野武士）と<br>
+                            20人未満の有望スタートアップをつなぎます。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- どう解決するのか（4ステップ） -->
+        <section id="solution" class="py-16 sm:py-24 bg-gray-950">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white section-title">
+                        どう解決するのか
+                    </h2>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Step 1 -->
+                    <div class="bg-gray-900 p-8 rounded-2xl border border-gray-800 relative overflow-hidden card-hover">
+                        <div class="absolute top-0 right-0 bg-blue-900/30 text-blue-400 text-6xl font-black opacity-20 -mr-4 -mt-4 p-4 step-number">01</div>
+                        <h3 class="text-xl font-bold text-white mb-1 flex items-center">
+                            <span class="text-blue-500 mr-3 text-2xl">🧪</span> 診断
+                        </h3>
+                        <p class="text-sm text-blue-200 mb-4 font-bold ml-10">0→1診断とエキスパート面談で「野武士」を厳選</p>
+                        <ul class="space-y-2 text-gray-400 text-sm ml-10 list-disc pl-4 marker:text-blue-600">
+                            <li>0→1で必要なスキル・マインドを可視化</li>
+                            <li>エキスパートが適性を中立評価</li>
+                            <li>強み・価値観・働き方を棚卸し</li>
+                            <li>0→1で活躍できる人材を特定</li>
+                        </ul>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="bg-gray-900 p-8 rounded-2xl border border-gray-800 relative overflow-hidden card-hover">
+                        <div class="absolute top-0 right-0 bg-blue-900/30 text-blue-400 text-6xl font-black opacity-20 -mr-4 -mt-4 p-4 step-number">02</div>
+                        <h3 class="text-xl font-bold text-white mb-1 flex items-center">
+                            <span class="text-blue-500 mr-3 text-2xl">🕸️</span> ネットワーク
+                        </h3>
+                        <p class="text-sm text-blue-200 mb-4 font-bold ml-10">20人未満スタートアップの独自データベース</p>
+                        <ul class="space-y-2 text-gray-400 text-sm ml-10 list-disc pl-4 marker:text-blue-600">
+                            <li>プレシード〜シードの有望企業を構造的に収集</li>
+                            <li>創業者の価値観・事業フェーズ・組織の実態を把握</li>
+                            <li>非公開の創業期スタートアップも多数</li>
+                            <li>自分では見つけられない会社に出会える</li>
+                        </ul>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="bg-gray-900 p-8 rounded-2xl border border-gray-800 relative overflow-hidden card-hover">
+                        <div class="absolute top-0 right-0 bg-blue-900/30 text-blue-400 text-6xl font-black opacity-20 -mr-4 -mt-4 p-4 step-number">03</div>
+                        <h3 class="text-xl font-bold text-white mb-1 flex items-center">
+                            <span class="text-blue-500 mr-3 text-2xl">🎯</span> マッチング
+                        </h3>
+                        <p class="text-sm text-blue-200 mb-4 font-bold ml-10">診断 × 内情データで精度重視の紹介</p>
+                        <ul class="space-y-2 text-gray-400 text-sm ml-10 list-disc pl-4 marker:text-blue-600">
+                            <li>診断結果をもとに、本当に合う企業のみ選定</li>
+                            <li>ビジョン・価値観・スピード感まで加味</li>
+                            <li>ミスマッチを最大限防止</li>
+                        </ul>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="bg-gray-900 p-8 rounded-2xl border border-gray-800 relative overflow-hidden card-hover">
+                        <div class="absolute top-0 right-0 bg-blue-900/30 text-blue-400 text-6xl font-black opacity-20 -mr-4 -mt-4 p-4 step-number">04</div>
+                        <h3 class="text-xl font-bold text-white mb-1 flex items-center">
+                            <span class="text-blue-500 mr-3 text-2xl">🔭</span> モニタリング
+                        </h3>
+                        <p class="text-sm text-blue-200 mb-4 font-bold ml-10">紹介後も並走して判断をサポート</p>
+                        <ul class="space-y-2 text-gray-400 text-sm ml-10 list-disc pl-4 marker:text-blue-600">
+                            <li>面談後に双方の温度感を整理</li>
+                            <li>求職者の迷いや疑問を言語化</li>
+                            <li>企業側とも期待値のすり合わせ</li>
+                            <li>意思決定がしやすい転職体験を提供</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 提供価値（Value） -->
+        <section id="value" class="py-16 sm:py-24 bg-gray-900">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white text-center section-title mb-16">
+                    提供価値 (Value)
+                </h2>
+                
+                <div class="grid lg:grid-cols-2 gap-10">
+                    <!-- 求職者側の価値 -->
+                    <div class="bg-gradient-to-br from-blue-900/40 to-gray-900 p-8 rounded-2xl border border-blue-800/50">
+                        <h3 class="text-xl font-bold text-blue-400 mb-6 flex items-center uppercase tracking-wider">
+                            <span class="bg-blue-500 text-gray-900 rounded px-2 py-1 text-xs mr-3">For Talent</span>
+                            求職者への価値
+                        </h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-3 text-lg">✓</span>
+                                <div>
+                                    <strong class="text-white block mb-1">自分に合う創業期スタートアップに出会える</strong>
+                                    <p class="text-gray-400 text-sm">膨大な情報の中から、本当に相性の良い挑戦の場が見つかります。</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-3 text-lg">✓</span>
+                                <div>
+                                    <strong class="text-white block mb-1">裁量と熱量を持ってコミットできる環境を選べる</strong>
+                                    <p class="text-gray-400 text-sm">野武士としてのスキルを最大限発揮できる舞台を提供します。</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-3 text-lg">✓</span>
+                                <div>
+                                    <strong class="text-white block mb-1">外から見えない内情が事前にわかる</strong>
+                                    <p class="text-gray-400 text-sm">価値観・働き方・事業フェーズなど、入社後のギャップを防ぎます。</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-3 text-lg">✓</span>
+                                <div>
+                                    <strong class="text-white block mb-1">無駄なカジュアル面談を減らし判断に集中</strong>
+                                    <p class="text-gray-400 text-sm">確度の高いマッチングのみを行うため、効率的な活動が可能です。</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- 企業側の価値 -->
+                    <div class="bg-gray-800/50 p-8 rounded-2xl border border-gray-700">
+                        <h3 class="text-xl font-bold text-gray-400 mb-6 flex items-center uppercase tracking-wider">
+                            <span class="bg-gray-600 text-gray-900 rounded px-2 py-1 text-xs mr-3">For Startup</span>
+                            企業側の価値
+                        </h3>
+                        <p class="text-sm text-gray-400 mb-6 italic">
+                            ※ 良質な企業が集まる理由がここにあります
+                        </p>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <span class="text-gray-500 mr-3 text-lg">✓</span>
+                                <div>
+                                    <strong class="text-gray-200 block mb-1">初期フェーズでも任せられる人材を採用できる</strong>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-gray-500 mr-3 text-lg">✓</span>
+                                <div>
+                                    <strong class="text-gray-200 block mb-1">採用の時間・コストを削減し事業に集中できる</strong>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-gray-500 mr-3 text-lg">✓</span>
+                                <div>
+                                    <strong class="text-gray-200 block mb-1">最重要である「相性」を高精度で判断できる</strong>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 運営企業 -->
+        <section id="company" class="py-16 sm:py-24 bg-gray-950">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white section-title">
+                        運営企業
+                    </h2>
+                    <p class="mt-4 text-blue-400 font-bold text-xl">Startup Studio SEREAL</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-gray-900 p-6 rounded-xl border border-gray-800">
+                        <h3 class="text-white font-bold mb-3 text-lg">🚀 STARTUPを量産する STARTUP</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            創業〜PMFまでに特化し、複数事業を同時多発的に立ち上げるスタートアップスタジオ。「良質なスタートアップの量産」をミッションに多数の企業に伴走。
+                        </p>
+                    </div>
+                    <div class="bg-gray-900 p-6 rounded-xl border border-gray-800">
+                        <h3 class="text-white font-bold mb-3 text-lg">⚔️ 0→1に特化した専門家集団</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            PdM / Designer / Engineer / BizDev など、0→1に強いメンバーが在籍。カオスを楽しみ事業を創るプロフェッショナルチーム。
+                        </p>
+                    </div>
+                    <div class="bg-gray-900 p-6 rounded-xl border border-gray-800">
+                        <h3 class="text-white font-bold mb-3 text-lg">🤝 強固なネットワーク</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            シード・アーリーフェーズ中心に、多くのスタートアップ・VC・事業会社と連携。独自の情報網を構築しています。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA セクション -->
+        <section id="register" class="py-20 sm:py-28 bg-blue-800">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-4xl sm:text-5xl font-extrabold text-white mb-6">
+                    まずは登録から
+                </h2>
+                <p class="text-xl text-blue-100 mb-10">
+                    創業期スタートアップの<br class="sm:hidden">非公開求人・ニュースをお届けします。
+                </p>
+
+                <a href="#hero" class="cta-button inline-block px-12 py-4 bg-white hover:bg-gray-100 text-blue-800 font-bold text-2xl rounded-full shadow-2xl transition-all duration-300 transform hover:scale-105">
+                    無料で登録する
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="bg-gray-950 border-t border-gray-900 py-8 text-center">
+        <p class="text-gray-600 text-sm">&copy; 2024 スタートアップ野武士採用. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
